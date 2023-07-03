@@ -1,41 +1,13 @@
-let stringArray = ['one', 'heu', 'Dave'];
-let guitar = ['Strat', 'Les Paul', 5150];
-let mixedData = [ 'EVH', 1984, true];
+// Type Aliases
 
-stringArray[0] = 'John';
+type stringOrNumber = string | number;
 
-stringArray.push('her');
-
-guitar[0] = 1984;
-
-
-let test = [];
-
-let bands: string[] = []; 
-
-//tuple:
-
-let myTuple: [string, number, boolean] = ['Dave', 42, true];
-
-
-//objects
-
-
-let myObj: object = {}
-
-const exampleObj = {
-  prop1: 'Dave',
-  prop2: true
-}
+type stringOrNumberArray = (string | number);
 
 type Guitarist = {
-  name: string,
-  active: boolean,
-  albums: (string | number)[]
+  name?: string,
+  active: boolean, 
+  albums: stringOrNumberArray
 }
 
-let evh: Guitarist = {
-  name: 'Eddie',
-  active: false,
-  albums: [1984, 5150, 'OU812']
-}
+type userId = stringOrNumber
