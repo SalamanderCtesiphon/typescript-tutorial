@@ -1,8 +1,9 @@
 "use strict";
-const year = document.getElementById('year');
-const getYear = new Date().getFullYear();
-const thisYear = getYear.toString();
-if (year) {
-    year.setAttribute("datetime", thisYear);
-    year.textContent = thisYear;
+class Coder {
+    constructor(name, music, age, lang) {
+        this.name = name;
+        this.music = music;
+        this.age = age;
+        this.lang = lang;
+    }
 }

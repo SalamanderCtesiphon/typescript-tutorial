@@ -1,7 +1,18 @@
-const year: HTMLElement | null = document.getElementById('year')
-const getYear = new Date().getFullYear()
-const thisYear:string = getYear.toString()
-if(year) {
-  year.setAttribute("datetime", thisYear)
-  year.textContent = thisYear
-} 
+class Coder {
+  name: string
+  music: string
+  age: number
+  lang: string
+
+  constructor(
+    name: string,
+    music: string,
+    age: number, 
+    lang: string 
+  ) {
+    this.name = name
+    this.music = music
+    this.age = age
+    this.lang = lang
+  }
+}
